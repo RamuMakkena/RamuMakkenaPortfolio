@@ -1,0 +1,175 @@
+/* Style sheet for my Portfolio */
+* {
+    color: blueviolet;
+}
+
+.header{
+    background: greenyellow;
+    display: flex;
+    justify-content: space-between;
+}
+.avatar{
+    display: flex;
+}
+.avatar-image{
+    border-radius:15px;
+    width:180px;
+    height:180px;
+}
+.avatar-text h1{
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+    margin:0;
+}
+
+.header ul {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight:lighter;
+}
+.header ul li a:hover{
+    background: blue;
+    color: white;
+    font-weight: light;
+    border-radius: 15px;
+}
+
+/*hero section styling. This section contains a background image and a subtitle at right*/
+
+.hero{
+    display: flex;
+    height: 100px;
+    position: relative;
+    background-image:url("../images/hero-image.jpg");
+    background-size:cover;
+}
+.tagline{
+    flex:1;
+    text-align: right;
+    padding: 0 15px;
+}
+.tagline h2{
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* Left Header styling */
+.left-header{
+    flex: 0 0 15%;
+    border-right: 5px solid gray; 
+    text-align: right;
+    padding-right: 20px; 
+}
+/* About Me section styling */
+.aboutme{
+    display: flex;
+    margin: 30px 0;
+}
+.aboutme h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.aboutmetext{
+    padding: 0 10px;
+}
+.work{
+    display: flex;
+    margin: 30px 0;
+}
+.work-content{
+    flex: 0 0 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.main-work-container{
+    display: flex;
+    text-align:center;
+    flex:1;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    opacity: 0.7;
+    width: calc( ( ( 100% / 3 ) * 2) - 20px );
+    height: 500px;
+}
+.main-work-container:hover{
+    opacity:1;
+}
+.main-work-container-image{
+    position:absolute;
+    text-align: center;
+}
+.main-work-content-header{
+    position: absolute;
+}
+.work-tiles{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+.work-tile{
+    display: flex;
+    flex: 0 0 40%;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    opacity: 0.7;
+    margin: 15px 15px;
+
+}
+.work-tile-header{
+    position: absolute;
+}
+
+.work-tile:hover{
+    opacity: 1;
+}
+
+
+.contactme{
+    display: flex;
+    margin: 30px 0;
+}
+.contactme-content{
+    display:flex;
+    justify-content: space-between;
+    flex: 0 0 85%;
+}
+.contactme-content ul {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contactme-content ul li {
+    padding: 10px 15px;
+}
+.contactme-content ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight:bold;
+    font-size: 24px;
+}
+.contactme-content ul li a:hover{
+    background: blue;
+    color: white;
+    font-weight: light;
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    background: greenyellow;
+}
