@@ -1,0 +1,177 @@
+/* Style sheet for my Portfolio */
+* {
+    color: blueviolet;
+}
+
+.header{
+    background: greenyellow;
+    display: flex;
+    justify-content: space-between;
+}
+.avatar{
+    display: flex;
+    position: relative;
+}
+.avatar-image{
+    width:50px;
+    height:50px;
+    margin:5px 5px;
+    align-items: center;
+}
+.avatar-image img{
+    width : 100%;
+    border-radius:15px;
+}
+.avatar-text h1{
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+    margin:5px 5px;
+}
+.avatar-text h1 a{ 
+    text-decoration: none;
+}
+
+.header ul {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight:bold;
+    font-size: 24px;
+}
+.header ul li a:hover{
+    background: blue;
+    color: white;
+    font-weight: light;
+    border-radius: 15px;
+}
+
+/*hero section styling. This section contains a background image and a subtitle at right*/
+
+.hero{
+    display: flex;
+    height: 100px;
+    position: relative;
+    background-image:url("../images/hero-image.jpg");
+    background-size:cover;
+}
+.tagline{
+    flex:1;
+    text-align: right;
+    padding: 0 15px;
+}
+.tagline h2{
+    color: white;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+/* Left Header styling */
+.left-header{
+    flex: 0 0 15%;
+    border-right: 5px solid gray; 
+    text-align: right;
+    padding-right: 20px; 
+}
+.left-header h2{
+    font-weight: bold;
+    font-size: 36px;
+    color: gray;
+    font-style: italic;
+}
+/* About Me section styling */
+.aboutme{
+    display: flex;
+    margin: 30px 0;
+}
+
+.aboutmetext{
+    padding: 0 10px;
+}
+.aboutmetext p{
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+.work{
+    display: flex;
+}
+.work-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+}
+.work-tile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position:relative;
+    flex : 0 1 30%;
+    padding: 1%;
+}
+.work-tile a {
+    text-decoration: none;
+
+}
+.work-tile:first-of-type{
+    flex : 0 1 60%;
+    padding: 1% 2%;
+}
+.work-tile-header{
+    position: absolute;
+    /* padding: 1em; */
+    background-color: beige;
+    z-index: 1;
+}
+.work-tile img{
+    width: 100%;
+}
+
+.work-tile:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.contactme{
+    display: flex;
+    margin: 30px 0;
+}
+.contactme-content{
+    display:flex;
+    justify-content: space-between;
+}
+.contactme-content ul {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contactme-content ul li {
+    padding: 10px 15px;
+}
+.contactme-content ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight:bold;
+    font-size: 24px;
+}
+.contactme-content ul li a:hover{
+    background: blue;
+    color: white;
+    font-weight: light;
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    background: greenyellow;
+}
