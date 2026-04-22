@@ -1,0 +1,23 @@
+# Go
+backend/bin/
+*.exe
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Terraform
+infra/**/.terraform/
+infra/**/terraform.tfstate*
+infra/**/*.tfvars
+!infra/**/terraform.tfvars.example
+
+# Env
+.env
+*.env
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
